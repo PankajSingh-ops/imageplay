@@ -1,5 +1,4 @@
 "use client";
-import ImagesearchRollerIcon from '@mui/icons-material/ImagesearchRoller';
 import { useRouter } from 'next/navigation';
 import Header from './common/header/Header';
 
@@ -7,18 +6,22 @@ export default function Home() {
   const navigate = useRouter();
 
   const items = [
-    { name: 'Overlay', path: 'pages/overlay', icon: <ImagesearchRollerIcon /> },
+    { name: 'Add Audio', path: 'pages/addaudio' },
+    { name: 'Base64', path: 'pages/converttobase' },
+    { name: 'Overlay', path: 'pages/overlay', icon: "" },
     { name: 'Filter', path: 'pages/filter' },
+    
     { name: 'Compress', path: 'pages/compress' },
     { name: 'Sizer', path: 'pages/sizer' },
     { name: 'Collage', path: 'pages/collage' },
     { name: 'Rotator', path: 'pages/rotator' },
     { name: 'Color', path: 'pages/color' },
+
     { name: 'Grayscale', path: 'pages/grayscale' },
     { name: 'Crop', path: 'pages/crop' },
+    { name: 'Remove backgound', path: 'pages/remove' },
     { name: 'JPG TO PDF', path: 'pages/jpgtopdf' },
     { name: 'Text Extract', path: 'pages/textextract' },
-    { name: 'Add Audio', path: 'pages/addaudio' },
 
 
   ];
