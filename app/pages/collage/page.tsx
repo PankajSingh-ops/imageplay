@@ -1,4 +1,5 @@
 "use client"
+import Header from "@/app/common/header/Header";
 import { useState, ChangeEvent, useRef } from "react";
 
 export default function ImageCollageMaker() {
@@ -75,6 +76,8 @@ export default function ImageCollageMaker() {
   };
 
   return (
+    <>
+    <Header />
     <div className="min-h-screen p-4 bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center">
       <div className="max-w-lg w-full p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md">
         <h1 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Image Collage Maker</h1>
@@ -131,5 +134,6 @@ export default function ImageCollageMaker() {
         )}
       </div>
     </div>
+    </>
   );
 }

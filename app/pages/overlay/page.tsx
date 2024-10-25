@@ -1,4 +1,5 @@
 "use client"
+import Header from "@/app/common/header/Header";
 import { useRef, useState, ChangeEvent } from "react";
 
 export default function ImageOverlayDownload() {
@@ -65,6 +66,8 @@ export default function ImageOverlayDownload() {
   };
 
   return (
+    <>
+    <Header/>
     <div className="min-h-screen p-4 bg-gray-100 dark:bg-gray-800 flex flex-col items-center justify-center">
       <div className="max-w-lg w-full p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md">
         <h1 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Image Overlay Editor</h1>
@@ -120,5 +123,6 @@ export default function ImageOverlayDownload() {
         )}
       </div>
     </div>
+    </>
   );
 }
