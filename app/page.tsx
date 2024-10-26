@@ -6,25 +6,22 @@ export default function Home() {
   const navigate = useRouter();
 
   const items = [
-    { name: 'Add Audio', path: 'pages/addaudio' },
+    { name: 'Add Audio', path: 'pages/addaudio', icon:'' },
     { name: 'Base64', path: 'pages/converttobase' },
-    { name: 'Overlay', path: 'pages/overlay', icon: "" },
-    { name: 'Filter', path: 'pages/filter' },
-    
-    { name: 'Compress', path: 'pages/compress' },
-    { name: 'Sizer', path: 'pages/sizer' },
     { name: 'Collage', path: 'pages/collage' },
-    { name: 'Rotator', path: 'pages/rotator' },
     { name: 'Color', path: 'pages/color' },
-
-    { name: 'Grayscale', path: 'pages/grayscale' },
+    { name: 'Compress', path: 'pages/compress' },
     { name: 'Crop', path: 'pages/crop' },
-    { name: 'Remove backgound', path: 'pages/remove' },
+    { name: 'Filter', path: 'pages/filter' },
+    { name: 'Grayscale', path: 'pages/grayscale' },
     { name: 'JPG TO PDF', path: 'pages/jpgtopdf' },
+    { name: 'JPG TO SVG', path: 'pages/jpgtosvg' },
+    { name: 'Overlay', path: 'pages/overlay', icon: "" },
+    { name: 'Remove backgound', path: 'pages/remove' },
+    { name: 'Rotator', path: 'pages/rotator' },
+    { name: 'Sizer', path: 'pages/sizer' },
     { name: 'Text Extract', path: 'pages/textextract' },
-
-
-  ];
+];
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900">
