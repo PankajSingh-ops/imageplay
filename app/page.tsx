@@ -14,6 +14,7 @@ export default function Home() {
     { name: 'Crop', path: 'pages/crop' },
     { name: 'Filter', path: 'pages/filter' },
     { name: 'Grayscale', path: 'pages/grayscale' },
+    { name: 'IMAGE TO DOCS', path: 'pages/documentss' },
     { name: 'JPG TO PDF', path: 'pages/jpgtopdf' },
     { name: 'JPG TO SVG', path: 'pages/jpgtosvg' },
     { name: 'Overlay', path: 'pages/overlay', icon: "" },
@@ -21,6 +22,8 @@ export default function Home() {
     { name: 'Rotator', path: 'pages/rotator' },
     { name: 'Sizer', path: 'pages/sizer' },
     { name: 'Text Extract', path: 'pages/textextract' },
+    { name: 'Webp Converter', path: 'pages/webpconverter' },
+
 ];
 
   return (
@@ -43,7 +46,7 @@ export default function Home() {
                 </span>
               )}
               <p className="text-lg font-semibold text-gray-800 dark:text-gray-200 group-hover:text-blue-600 dark:group-hover:text-blue-400">
-                {item.name}
+                {item.name.toUpperCase()}
               </p>
             </div>
           </div>
